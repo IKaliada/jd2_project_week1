@@ -17,4 +17,10 @@ public class RepositoryModuleTest {
         List<String> list = repositoryModule.saveFile(file);
         Assert.assertNotNull(list);
     }
+
+    @Test
+    public void checkIfFileIsCreated(){
+        File file = new File("File.txt");
+        Assert.assertTrue(file.exists());
+    }
 }
